@@ -26,6 +26,11 @@
             bindings = <&kp LS(NON_US_BACKSLASH)>;
             key-positions = <4 7>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -40,7 +45,7 @@
 
             label = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y          &kp U      &kp I      &kp O    &kp P     &kp ESC
+&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y          &kp U      &kp I      &kp O    &kp P     &kp LEFT_ALT
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G    &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
                               &kp LGUI  &mo 1  &mo 3    &kp BACKSPACE  &kp SPACE  &mo 2
@@ -82,7 +87,7 @@
         layer_3 {
             label = "layer3";
             bindings = <
-&kp TAB       &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
                               &trans  &trans  &trans         &mo 4   &trans  &trans
