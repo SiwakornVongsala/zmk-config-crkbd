@@ -34,32 +34,32 @@
 
         Lpar {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
 
         Rpar {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <9 10>;
+            key-positions = <9 8>;
         };
 
         Rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
         };
 
         Lbkt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
 
         Rbrc {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
         };
 
         Lbrc {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
         };
     };
 
