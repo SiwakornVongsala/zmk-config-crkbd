@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -27,14 +28,39 @@
             key-positions = <4 7>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-
         esc2 {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
+        };
+
+        Lpar {
+            bindings = <&kt LEFT_PARENTHESIS>;
+            key-positions = <1 2>;
+        };
+
+        Rpar {
+            bindings = <&kt RIGHT_PARENTHESIS>;
+            key-positions = <9 10>;
+        };
+
+        Rbkt {
+            bindings = <&kt RIGHT_BRACKET>;
+            key-positions = <21 22>;
+        };
+
+        Lbkt {
+            bindings = <&kt LEFT_BRACKET>;
+            key-positions = <13 14>;
+        };
+
+        Rbrc {
+            bindings = <&kt RIGHT_BRACE>;
+            key-positions = <33 34>;
+        };
+
+        Lbrc {
+            bindings = <&kt LEFT_BRACE>;
+            key-positions = <25 26>;
         };
     };
 
