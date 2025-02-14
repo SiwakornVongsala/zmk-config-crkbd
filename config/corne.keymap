@@ -31,6 +31,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        esc2 {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
@@ -87,10 +92,10 @@
         layer_3 {
             label = "layer3";
             bindings = <
-&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &mo 4
 &kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans         &mo 4   &trans  &trans
+                              &trans  &trans  &trans         &trans  &trans  &trans
             >;
         };
 
