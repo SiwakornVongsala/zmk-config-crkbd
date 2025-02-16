@@ -38,6 +38,11 @@
             bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <34 33>;
+        };
     };
 
     behaviors {
@@ -59,9 +64,9 @@
             tapping-term-ms = <130>;
             quick-tap-ms = <0>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <1>;
         };
-
     };
 
     keymap {
@@ -76,9 +81,9 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q              &kp W  &kp E  &kp R  &kp T    &kp Y          &kp U      &kp I      &kp O       &kp P                   &kp BACKSPACE
+&trans  &kp Q              &kp W  &kp E  &kp R  &kp T    &kp Y          &kp U      &kp I      &kp O       &kp P                   &trans
 &trans  &kp A              &kp S  &kp D  &kp F  &kp G    &kp H          &kp J      &kp K      &kp L       &kp SEMI                &trans
-&trans  &pht LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M      &kp COMMA  &kp PERIOD  &pht RIGHT_SHIFT SLASH  &kp ENTER
+&trans  &pht LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B    &kp N          &kp M      &kp COMMA  &kp PERIOD  &pht RIGHT_SHIFT SLASH  &trans
                                   &mo 5  &mo 1  &mo 3    &kp BACKSPACE  &kp SPACE  &mo 2
             >;
         };
@@ -92,10 +97,10 @@
 
             label = "layer1";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR        &kp RPAR         &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &trans     &kp MINUS  &kp EQUAL     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &trans     &kp TILDE  &kp GRAVE     &kp SQT         &trans           &trans
-                          &trans    &trans    &trans       &trans     &trans     &kp PIPE
+&trans  &kp EXCL  &kp AT     &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR        &kp RPAR         &trans
+&trans  &trans    &kp LCTRL  &kp LALT  &kp LEFT_GUI  &trans       &trans     &kp MINUS  &kp EQUAL     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&trans  &trans    &trans     &trans    &trans        &trans       &trans     &kp TILDE  &kp GRAVE     &kp SQT         &trans           &trans
+                             &trans    &trans        &trans       &trans     &trans     &kp PIPE
             >;
         };
 
@@ -118,10 +123,10 @@
         layer_3 {
             label = "layer3";
             bindings = <
-&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9            &kp N0             &mo 4
-&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans            &trans             &trans
-                              &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9            &kp N0             &mo 4
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans            &trans             &trans
+                        &trans  &trans  &trans         &trans  &trans  &trans
             >;
         };
 
