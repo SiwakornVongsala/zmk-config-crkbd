@@ -75,10 +75,10 @@
 
             label = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T    &kp Y          &kp U      &kp I      &kp O       &kp P      &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G    &kp H          &kp J      &kp K      &kp L       &kp SEMI   &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B    &kp N          &kp M      &kp COMMA  &kp PERIOD  &kp SLASH  &kp ENTER
-                              &kp LGUI  &mo 1  &mo 3    &kp BACKSPACE  &kp SPACE  &mo 2
+&kp TAB         &kp Q             &kp W        &kp E           &kp R           &kp T    &kp Y          &kp U            &kp I            &kp O        &kp P                  &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A             &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G    &kp H          &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RCTRL L  &kp SEMI               &kp SQT
+&kp LCTRL       &mt LEFT_SHIFT Z  &kp X        &kp C           &kp V           &kp B    &kp N          &kp M            &kp COMMA        &kp PERIOD   &mt RIGHT_SHIFT SLASH  &kp ENTER
+                                               &kp LGUI        &mo 1           &mo 3    &kp BACKSPACE  &kp SPACE        &mo 2
             >;
         };
 
@@ -91,10 +91,10 @@
 
             label = "layer1";
             bindings = <
-&trans      &kp EXCL      &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS   &kp ASTERISK              &kp LPAR          &kp RPAR           &kp BACKSLASH
-&kp RSHIFT  &kp LEFT_ALT  &trans  &trans    &trans    &trans       &kp MINUS       &kp EQUAL  &kp NON_US_BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&trans      &trans        &trans  &trans    &trans    &trans       &kp UNDERSCORE  &kp PLUS   &kp LS(NON_US_BACKSLASH)  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-                                  &trans    &trans    &trans       &trans          &trans     &trans
+&trans      &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS   &kp ASTERISK              &kp LPAR          &kp RPAR           &kp BACKSLASH
+&kp RSHIFT  &trans    &trans  &trans    &trans    &trans       &kp MINUS       &kp EQUAL  &kp NON_US_BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
+&trans      &trans    &trans  &trans    &trans    &trans       &kp UNDERSCORE  &kp PLUS   &kp LS(NON_US_BACKSLASH)  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+                              &trans    &trans    &trans       &trans          &trans     &trans
             >;
         };
 
@@ -107,20 +107,20 @@
 
             label = "layer2";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5         &kp F6          &kp F7          &kp F8        &kp F9     &kp F10  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &trans
-&trans  &trans   &trans   &trans  &trans  &bootloader    &trans          &trans          &trans        &trans     &trans   &trans
-                          &trans  &trans  &trans         &trans          &trans          &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &kp F6          &kp F7          &kp F8        &kp F9     &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans   &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &kp F12  &kp F12    &trans          &trans          &trans        &trans     &trans   &trans
+                        &trans  &trans   &trans     &trans          &trans          &trans
             >;
         };
 
         layer_3 {
             label = "layer3";
             bindings = <
-&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &mo 4
-&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans  &trans         &trans  &trans  &trans
+&trans        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5         &kp N6  &kp N7     &kp N8     &kp N9            &kp N0             &mo 4
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans         &trans  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans        &trans  &trans  &trans  &trans  &bootloader    &trans  &trans     &trans     &trans            &trans             &trans
+                              &trans  &trans  &trans         &trans  &trans     &trans
             >;
         };
 
