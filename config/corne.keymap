@@ -9,10 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <900>;
+    tapping-term-ms = <400>;
 };
 
 / {
+
+    &mt {
+        tapping-term-ms = <400>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
