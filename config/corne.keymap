@@ -104,7 +104,7 @@
             bindings = <
 &trans  &kp Q            &kp W  &kp E               &kp R  &kp T    &kp Y          &kp U                     &kp I                    &kp O       &kp P                &trans
 &trans  &kp A            &kp S  &kp D               &kp F  &kp G    &kp H          &kp J                     &kp K                    &kp L       &kp SEMICOLON        &trans
-&trans  &pht150 LCTRL Z  &kp X  &pht150 LEFT_ALT C  &kp V  &kp B    &kp N          &kp M                     &pht150 COMMA RIGHT_ALT  &kp PERIOD  &pht150 RCTRL SLASH  &trans
+&trans  &pht150 LCTRL Z  &kp X  &pht150 LEFT_ALT C  &kp V  &kp B    &kp N          &kp M                     &pht150 RIGHT_ALT COMMA  &kp PERIOD  &pht150 RCTRL SLASH  &trans
                                 &kp LEFT_GUI        &mo 1  &mo 2    &kp BACKSPACE  &pht150 LEFT_SHIFT SPACE  &lt 3 ENTER
             >;
         };
