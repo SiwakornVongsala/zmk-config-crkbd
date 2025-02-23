@@ -123,17 +123,17 @@
 
             label = "layer1";
             bindings = <
-&trans  &kp EXCL           &kp AT            &kp HASH        &kp DLLR              &kp PRCNT                   &kp CARET      &kp AMPS               &kp ASTERISK     &trans             &kp EQUAL             &trans
-&trans  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS                   &kp PLUS       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE      &trans
-&trans  &trans             &kp LCTRL         &kp LEFT_ALT    &kp PIPE              &kp LS(NON_US_BACKSLASH)    &kp UNDER      &kp BACKSLASH          &kp RIGHT_ALT    &kp RCTRL          &kp NON_US_BACKSLASH  &trans
-                                             &trans          &trans                &trans                      &kp BACKSPACE  &trans                 &trans
+&trans  &kp EXCL           &kp AT            &kp HASH        &kp DLLR              &kp PRCNT                   &kp CARET  &kp AMPS               &kp ASTERISK     &trans             &kp EQUAL             &trans
+&trans  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS                   &kp PLUS   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SINGLE_QUOTE      &trans
+&trans  &trans             &trans            &trans          &kp PIPE              &kp LS(NON_US_BACKSLASH)    &kp UNDER  &kp BACKSLASH          &trans           &trans             &kp NON_US_BACKSLASH  &trans
+                                             &trans          &trans                &trans                      &kp DEL    &trans                 &trans
             >;
         };
 
         layer_2 {
             label = "layer2";
             bindings = <
-&trans  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5    &kp N6         &kp N7          &kp N8        &kp N9     &kp N0   &mo 4
+&trans  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5    &kp N6         &kp N7          &kp N8        &kp N9     &kp N0   &mo 5
 &trans  &kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans   &trans
 &trans  &kp F1    &kp F2     &kp F3        &kp F4        &kp F5    &kp F6         &kp F7          &kp F8        &kp F9     &kp F10  &trans
                              &trans        &trans        &trans    &kp BACKSPACE  &kp F11         &kp F12
@@ -149,10 +149,19 @@
 
             label = "layer3";
             bindings = <
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans           &trans
-&trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &trans
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans           &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -163,15 +172,6 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &bootloader     &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans          &trans           &trans              &trans              &trans    &trans  &trans               &trans               &trans           &trans           &trans
-&trans  &trans          &pht150 LCTRL S  &pht150 LEFT_ALT D  &pht150 LEFT_GUI F  &trans    &trans  &pht150 RIGHT_GUI J  &pht150 RIGHT_ALT K  &pht150 RCTRL L  &trans           &trans
-&trans  &kp LEFT_SHIFT  &trans           &trans              &trans              &trans    &trans  &trans               &trans               &trans           &kp RIGHT_SHIFT  &trans
-                                         &trans              &trans              &trans    &trans  &trans               &trans
             >;
         };
     };
