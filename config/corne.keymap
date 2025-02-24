@@ -46,7 +46,7 @@
 
         shift+command {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <16 15 14>;
+            key-positions = <3 16>;
         };
 
         rshift {
