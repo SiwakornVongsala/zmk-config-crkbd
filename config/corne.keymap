@@ -10,11 +10,6 @@
 
 &mt { tapping-term-ms = <3000>; };
 
-&sk {
-    release-after-ms = <3000>;
-    quick-release;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
