@@ -114,10 +114,10 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q                 &kp W  &kp E         &kp R  &kp T    &kp Y          &kp U                    &kp I        &kp O       &kp P                          &trans
-&trans  &pht160 LEFT_SHIFT A  &kp S  &kp D         &kp F  &kp G    &kp H          &kp J                    &kp K        &kp L       &pht160 RIGHT_SHIFT SEMICOLON  &trans
-&trans  &pht150 LCTRL Z       &kp X  &kp C         &kp V  &kp B    &kp N          &kp M                    &kp COMMA    &kp PERIOD  &pht150 RCTRL SLASH            &trans
-                                     &kp LEFT_GUI  &mo 1  &mo 2    &kp BACKSPACE  &pht150 RIGHT_ALT SPACE  &lt 3 ENTER
+&trans  &kp Q            &kp W             &kp E         &kp R  &kp T    &kp Y          &kp U                    &kp I        &kp O                  &kp P                &trans
+&trans  &kp A            &pht160 LSHIFT S  &kp D         &kp F  &kp G    &kp H          &kp J                    &kp K        &pht160 RIGHT_SHIFT L  &kp SEMICOLON        &trans
+&trans  &pht150 LCTRL Z  &kp X             &kp C         &kp V  &kp B    &kp N          &kp M                    &kp COMMA    &kp PERIOD             &pht150 RCTRL SLASH  &trans
+                                           &kp LEFT_GUI  &mo 1  &mo 2    &kp BACKSPACE  &pht150 RIGHT_ALT SPACE  &lt 3 ENTER
             >;
         };
 
@@ -131,8 +131,8 @@
             label = "layer1";
             bindings = <
 &trans  &kp EXCL  &kp AT     &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET          &kp AMPS              &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans    &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans       &kp SQT            &kp MINUS             &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans  &trans    &trans     &trans        &trans        &trans       &kp DOUBLE_QUOTES  &kp UNDERSCORE        &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &trans    &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp GRAVE    &kp SQT            &kp MINUS             &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans  &trans    &trans     &trans        &trans        &kp TILDE    &kp DOUBLE_QUOTES  &kp UNDERSCORE        &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
                              &trans        &trans        &trans       &kp DEL            &kp NON_US_BACKSLASH  &kp PIPE
             >;
         };
