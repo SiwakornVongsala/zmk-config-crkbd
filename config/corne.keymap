@@ -130,10 +130,10 @@
 
             label = "layer1";
             bindings = <
-&trans  &kp EXCL  &kp AT     &kp HASH      &kp DLLR      &kp PRCNT    &kp CARET          &kp AMPS              &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans    &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp NON_US_BACKSLASH    &kp SQT            &kp MINUS             &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans  &trans    &trans     &trans        &trans        &kp LS(NON_US_BACKSLASH)    &kp DOUBLE_QUOTES  &kp UNDERSCORE        &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                             &trans        &trans        &trans       &kp DEL            &kp NON_US_BACKSLASH  &kp PIPE
+&trans  &kp EXCL  &kp AT     &kp HASH      &kp DLLR      &kp PRCNT                   &kp CARET          &kp AMPS        &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans    &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp NON_US_BACKSLASH        &kp SQT            &kp MINUS       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans  &trans    &trans     &trans        &trans        &kp LS(NON_US_BACKSLASH)    &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                             &trans        &trans        &trans                      &kp DEL            &kp BACKSLASH   &kp PIPE
             >;
         };
 
