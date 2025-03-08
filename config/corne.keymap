@@ -18,42 +18,42 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <1 0>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <13 14>;
+            key-positions = <10 11>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 33>;
+            key-positions = <29 28>;
         };
 
         shift+command {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <27 28>;
+            key-positions = <23 22>;
         };
 
         shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <37 40>;
+            key-positions = <37 40 31 34>;
         };
 
         shfitv2 {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <15 20>;
+            key-positions = <17 12>;
         };
 
         enter2 {
             bindings = <&kp ENTER>;
-            key-positions = <20 19 21>;
+            key-positions = <16 17 18>;
         };
 
         shif_alt {
             bindings = <&kp LS(RIGHT_ALT)>;
-            key-positions = <31 32>;
+            key-positions = <26 27>;
         };
     };
 
@@ -123,7 +123,7 @@
             >;
         };
 
-        raise_layer {
+        layer_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -139,16 +139,16 @@
             >;
         };
 
-        layer_3 {
+        layer_2 {
             bindings = <
-&kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6         &kp N7          &kp N8        &kp N9     &kp N0
-&kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &sk LEFT_SHIFT    &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp F1    &kp F2     &kp F3        &kp F4        &kp F5            &kp F11        &kp F12         &kp F8        &kp F9     &kp F10
-                             &trans        &trans        &trans            &kp BACKSPACE  &trans          &trans
+  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6         &kp N7          &kp N8        &kp N9     &kp N0
+  &kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &sk LEFT_SHIFT    &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
+  &kp F1    &kp F2     &kp F3        &kp F4        &kp F5            &kp F11        &kp F12         &kp F8        &kp F9     &kp F10
+                       &trans        &trans        &trans            &kp BACKSPACE  &trans          &trans
             >;
         };
 
-        layer_4 {
+        layer_3 {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -157,7 +157,7 @@
             >;
         };
 
-        lower_layer {
+        layer_4 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
