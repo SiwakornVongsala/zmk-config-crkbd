@@ -32,8 +32,8 @@
         };
 
         shift {
-            bindings = <&my_sk_lshift LEFT_SHIFT>;
-            key-positions = <13 16>; // ปรับให้ตรงตาม layout ใหม่ถ้าจำเป็น
+            bindings = <&my_sk_lshift>;
+            key-positions = <13 16>;
         };
 
         shif_alt {
