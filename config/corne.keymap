@@ -36,8 +36,8 @@
             key-positions = <37 40>;
         };
 
-        enter2 {
-            bindings = <&kp ENTER>;
+        one_shot_shift {
+            bindings = <&oneshot_shift>;
             key-positions = <16 17 18>;
         };
 
@@ -48,6 +48,12 @@
     };
 
     behaviors {
+        oneshot_shift: oneshot_shift {
+                compatible = "zmk,behavior-one-shot-modifier";
+                #binding-cells = <0>;
+                bindings = <&kp LEFT_SHIFT>;
+        };
+
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
