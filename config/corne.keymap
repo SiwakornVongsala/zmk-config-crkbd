@@ -48,7 +48,7 @@
 
         prev_tab {
             bindings = <&kp LG(LEFT_BRACE)>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
         };
     };
 
