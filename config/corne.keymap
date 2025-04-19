@@ -36,8 +36,8 @@
             key-positions = <37 40>;
         };
 
-        one_shot_shift {
-            bindings = <&oneshot_shift>;
+        caps_word_combo {
+            bindings = <&caps_word>;
             key-positions = <16 17 18>;
         };
 
@@ -48,10 +48,9 @@
     };
 
     behaviors {
-        oneshot_shift: oneshot_shift {
-                compatible = "zmk,behavior-one-shot-modifier";
-                #binding-cells = <0>;
-                bindings = <&kp LEFT_SHIFT>;
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
         };
 
         pht: positional_hold_tap {
