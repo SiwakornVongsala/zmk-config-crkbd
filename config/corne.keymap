@@ -40,6 +40,16 @@
             bindings = <&kp LS(RIGHT_ALT)>;
             key-positions = <26 27>;
         };
+
+        next_tab {
+            bindings = <&kp LG(RIGHT_BRACE)>;
+            key-positions = <7 8>;
+        };
+
+        prev_tab {
+            bindings = <&kp LG(LEFT_BRACE)>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
@@ -93,7 +103,7 @@
             label = "SK_BEHAVIOR";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <150>;
+            release-after-ms = <300>;
         };
     };
 
