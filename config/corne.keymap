@@ -132,19 +132,19 @@
 
             label = "Raise";
             bindings = <
-  &kp EXCL  &kp AT  &kp HASH       &kp DLLR        &kp PRCNT                   &kp CARET          &kp AMPS        &kp ASTERISK  &kp LPAR          &kp RPAR
-  &trans    &trans  &kp LS(COMMA)  &kp LS(PERIOD)  &kp NON_US_BACKSLASH        &kp SINGLE_QUOTE   &kp MINUS       &kp EQUAL     &kp LEFT_BRACE    &kp RIGHT_BRACE
-  &trans    &trans  &trans         &trans          &kp LS(NON_US_BACKSLASH)    &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                    &trans         &trans          &trans                      &kp RET            &kp BACKSLASH   &kp PIPE
+  &kp EXCL  &kp AT  &kp HASH       &kp DLLR          &kp PRCNT                   &kp CARET          &kp AMPS        &kp ASTERISK  &kp LPAR          &kp RPAR
+  &trans    &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH        &kp SINGLE_QUOTE   &kp MINUS       &kp EQUAL     &kp LEFT_BRACE    &kp RIGHT_BRACE
+  &trans    &trans  &trans         &trans            &kp LS(NON_US_BACKSLASH)    &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                    &trans         &trans            &trans                      &kp RET            &kp BACKSLASH   &kp PIPE
             >;
         };
 
         number_layer {
             bindings = <
-  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5            &kp N6         &kp N7          &kp N8        &kp N9     &kp N0
-  &kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &sk LEFT_SHIFT    &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
-  &kp F1    &kp F2     &kp F3        &kp F4        &kp F5            &kp F11        &kp F12         &kp F8        &kp F9     &kp F10
-                       &trans        &trans        &trans            &kp BACKSPACE  &trans          &trans
+  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
+  &kp CAPS  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
+  &kp F1    &kp F2  &kp F3  &kp F4  &kp F5    &kp F11   &kp F12         &kp F8        &kp F9     &kp F10
+                    &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
 
