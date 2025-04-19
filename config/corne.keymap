@@ -103,7 +103,8 @@
             label = "SK_BEHAVIOR";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <300>;
+            release-after-ms = <1000>;
+            quick-release;
         };
     };
 
