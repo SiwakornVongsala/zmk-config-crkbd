@@ -46,8 +46,10 @@
         my_sk_lshift: sk_lshift {
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <0>;
-            release-after-ms = <1000>; // <<< ตอบสนองเร็วขึ้น
-            bindings = <&sk>;
+            label = "SK_LSHFT";
+            release-after-ms = <150>;      // หน่วงการ release (ปรับได้)
+            timeout-ms = <3000>;           // Sticky อยู่ได้ 3 วินาทีถ้ายังไม่กดอะไร
+            bindings = <&kp LEFT_SHIFT>;  
         };
 
         pht: positional_hold_tap {
