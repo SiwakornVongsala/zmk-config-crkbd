@@ -26,11 +26,6 @@
             key-positions = <10 11>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <29 28>;
-        };
-
         shift+command {
             bindings = <&kp LS(LEFT_GUI)>;
             key-positions = <23 22>;
