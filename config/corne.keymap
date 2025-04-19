@@ -32,7 +32,7 @@
         };
 
         shift {
-            bindings = <&my_sk_lshift>;
+            bindings = <&sk_behavior LSHIFT>;
             key-positions = <13 16>;
         };
 
@@ -43,15 +43,6 @@
     };
 
     behaviors {
-        my_sk_lshift: sk_lshift {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <0>;
-            label = "SK_LSHFT";
-            release-after-ms = <150>;      // หน่วงการ release (ปรับได้)
-            timeout-ms = <3000>;           // Sticky อยู่ได้ 3 วินาทีถ้ายังไม่กดอะไร
-            bindings = <&kp LEFT_SHIFT>;  
-        };
-
         pht: positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -95,6 +86,14 @@
 
             hold-trigger-key-positions = <1>;
             label = "PHT160";
+        };
+
+        sk_behavior: sk_behavior {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_BEHAVIOR";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <150>;
         };
     };
 
