@@ -32,13 +32,8 @@
         };
 
         shift {
-            bindings = <&kp LS(LEFT_SHIFT)>;
-            key-positions = <37 40>;
-        };
-
-        caps_word_combo {
-            bindings = <&caps_word>;
-            key-positions = <16 17 18>;
+            bindings = <&my_sk_lshift LEFT_SHIFT>;
+            key-positions = <13 16>; // ปรับให้ตรงตาม layout ใหม่ถ้าจำเป็น
         };
 
         shif_alt {
@@ -48,9 +43,11 @@
     };
 
     behaviors {
-        caps_word: caps_word {
-            compatible = "zmk,behavior-caps-word";
+        my_sk_lshift: sk_lshift {
+            compatible = "zmk,behavior-sticky-key";
             #binding-cells = <0>;
+            release-after-ms = <1000>; // <<< ตอบสนองเร็วขึ้น
+            bindings = <&sk>;
         };
 
         pht: positional_hold_tap {
