@@ -33,7 +33,7 @@
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <37 40 31 34>;
+            key-positions = <37 40 13 16>;
         };
 
         enter2 {
