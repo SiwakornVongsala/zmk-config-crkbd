@@ -195,10 +195,10 @@
 
             label = "Base";
             bindings = <
-  &kp Q                &kp W             &kp E            &kp R                  &kp T    &kp Y          &kp U                   &kp I            &kp O             &kp P
-  &pht160f LEFT_ALT A  &pht160f LCTRL S  &pht160f LCMD D  &pht160f LEFT_SHIFT F  &kp G    &kp H          &pht160f RIGHT_SHIFT J  &pht160f RCMD K  &pht160f RCTRL L  &pht160f RIGHT_ALT SEMICOLON
-  &kp Z                &kp X             &kp C            &kp V                  &kp B    &kp N          &kp M                   &kp COMMA        &kp DOT           &kp SLASH
-                                         &kp LGUI         &mo 1                  &mo 2    &kp BACKSPACE  &kp SPACE               &lt 3 ENTER
+  &kp Q                  &kp W             &kp E                &kp R                &kp T    &kp Y          &kp U                 &kp I                 &kp O             &kp P
+  &pht160f LEFT_SHIFT A  &pht160f LCTRL S  &pht160f LEFT_ALT D  &pht160f LEFT_GUI F  &kp G    &kp H          &pht160f RIGHT_GUI J  &pht160f RIGHT_ALT K  &pht160f RCTRL L  &pht160f RIGHT_SHIFT SEMICOLON
+  &kp Z                  &kp X             &kp C                &kp V                &kp B    &kp N          &kp M                 &kp COMMA             &kp DOT           &kp SLASH
+                                           &kp LGUI             &mo 1                &mo 2    &kp BACKSPACE  &kp SPACE             &lt 3 ENTER
             >;
         };
 
@@ -220,10 +220,10 @@
 
         number_layer {
             bindings = <
-  &kp N1    &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
-  &kp CAPS  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
-  &kp F1    &kp F2  &kp F3  &kp F4  &kp F5    &kp F11   &kp F12         &kp F8        &kp F9     &kp F10
-                    &trans  &trans  &trans    &trans    &trans          &trans
+  &kp N1    &kp N2     &kp N3        &kp N4        &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
+  &kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
+  &kp F1    &kp F2     &kp F3        &kp F4        &kp F5    &kp F11   &kp F12         &kp F8        &kp F9     &kp F10
+                       &trans        &trans        &trans    &trans    &trans          &trans
             >;
         };
 
