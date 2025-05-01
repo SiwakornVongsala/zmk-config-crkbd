@@ -55,6 +55,11 @@
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
         };
+
+        caps {
+            bindings = <&kp LOCKING_CAPS>;
+            key-positions = <32 33>;
+        };
     };
 
     behaviors {
