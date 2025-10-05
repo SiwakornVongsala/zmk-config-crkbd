@@ -11,52 +11,52 @@
 &mt { tapping-term-ms = <3000>; };
 
 / {
-{
+    combos {
         compatible = "zmk,combos";
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 0>;
+            key-positions = <1 2>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <14 13>;
         };
 
         shift+command {
             bindings = <&kp LS(LEFT_GUI)>;
-            key-positions = <23 22>;
+            key-positions = <27 28>;
         };
 
         shift {
             bindings = <&sk_behavior LSHIFT>;
-            key-positions = <31 34>;
+            key-positions = <37 40>;
         };
 
         shif_alt {
             bindings = <&kp LS(RIGHT_ALT)>;
-            key-positions = <26 27>;
+            key-positions = <31 32>;
         };
 
         next_tab {
             bindings = <&kp LG(RIGHT_BRACE)>;
-            key-positions = <27 28>;
+            key-positions = <32 33>;
         };
 
         prev_tab {
             bindings = <&kp LG(LEFT_BRACE)>;
-            key-positions = <21 22>;
+            key-positions = <27 26>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
+            key-positions = <20 19 21>;
         };
 
         caps {
             bindings = <&kp LOCKING_CAPS>;
-            key-positions = <32 33>;
+            key-positions = <38 39>;
         };
     };
 
@@ -184,7 +184,7 @@
             release-after-ms = <1000>;
             quick-release;
         };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
