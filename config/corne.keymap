@@ -58,6 +58,11 @@
             bindings = <&kp LOCKING_CAPS>;
             key-positions = <38 39>;
         };
+
+        /* screenshot_combo { */
+        /*     bindings = <&screenshot>; */
+        /*     key-positions = <39 40>; */
+        /* }; */
     };
 
     behaviors {
@@ -193,6 +198,13 @@
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "SCREENSHOT";
         };
+
+        add_image_google_sheet: add_image_google_sheet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(I)) &kp LA(LC(G)) &kp LA(LC(I))>;
+            label = "ADD_IMAGE_GOOGLE_SHEET";
+        };
     };
 
     keymap {
@@ -207,10 +219,10 @@
 
             label = "Base";
             bindings = <
-&screenshot  &kp Q                  &kp W             &kp E                &kp R                &kp T    &kp Y          &kp U                 &kp I                 &kp O             &kp P                           &trans
-&trans       &pht160f LEFT_SHIFT A  &pht160f LCTRL S  &pht160f LEFT_ALT D  &pht160f LEFT_GUI F  &kp G    &kp H          &pht160f RIGHT_GUI J  &pht160f RIGHT_ALT K  &pht160f RCTRL L  &pht160f RIGHT_SHIFT SEMICOLON  &trans
-&trans       &kp Z                  &kp X             &kp C                &kp V                &kp B    &kp N          &kp M                 &kp COMMA             &kp DOT           &kp SLASH                       &trans
-                                                      &kp LGUI             &mo 1                &mo 2    &kp BACKSPACE  &kp SPACE             &lt 3 ENTER
+&screenshot              &kp Q                  &kp W             &kp E                &kp R                &kp T    &kp Y          &kp U                 &kp I                 &kp O             &kp P                           &trans
+&add_image_google_sheet  &pht160f LEFT_SHIFT A  &pht160f LCTRL S  &pht160f LEFT_ALT D  &pht160f LEFT_GUI F  &kp G    &kp H          &pht160f RIGHT_GUI J  &pht160f RIGHT_ALT K  &pht160f RCTRL L  &pht160f RIGHT_SHIFT SEMICOLON  &trans
+&trans                   &kp Z                  &kp X             &kp C                &kp V                &kp B    &kp N          &kp M                 &kp COMMA             &kp DOT           &kp SLASH                       &trans
+                                                                  &kp LGUI             &mo 1                &mo 2    &kp BACKSPACE  &kp SPACE             &lt 3 ENTER
             >;
         };
 
