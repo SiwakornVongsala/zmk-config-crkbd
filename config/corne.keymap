@@ -21,7 +21,7 @@
             key-positions = <1 0>;
         };
 
-        tab {
+        prev_tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
@@ -41,13 +41,13 @@
             key-positions = <26 27>;
         };
 
-        next_tab {
-            bindings = <&kp LG(RIGHT_BRACE)>;
+        r_cmd {
+            bindings = <&kp RIGHT_GUI>;
             key-positions = <27 28>;
         };
 
-        prev_tab {
-            bindings = <&kp LG(LEFT_BRACE)>;
+        l_cmd {
+            bindings = <&kp LEFT_GUI>;
             key-positions = <21 22>;
         };
 
@@ -59,6 +59,11 @@
         caps {
             bindings = <&kp LOCKING_CAPS>;
             key-positions = <32 33>;
+        };
+
+        next_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <19 18>;
         };
     };
 
@@ -219,7 +224,7 @@
   &kp EXCL  &kp AT  &kp HASH       &kp DLLR          &kp PRCNT                   &kp CARET          &kp AMPS        &kp ASTERISK  &kp LPAR          &kp RPAR
   &trans    &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp NON_US_BACKSLASH        &kp SINGLE_QUOTE   &kp MINUS       &kp EQUAL     &kp LEFT_BRACE    &kp RIGHT_BRACE
   &trans    &trans  &trans         &trans            &kp LS(NON_US_BACKSLASH)    &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                    &trans         &trans            &trans                      &kp RET            &kp BACKSLASH   &kp PIPE
+                    &kp LEFT_GUI   &trans            &trans                      &kp RET            &kp BACKSLASH   &kp PIPE
             >;
         };
 
@@ -228,15 +233,15 @@
   &kp N1    &kp N2     &kp N3        &kp N4        &kp N5    &kp N6    &kp N7          &kp N8        &kp N9     &kp N0
   &kp CAPS  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &mo 4
   &kp F1    &kp F2     &kp F3        &kp F4        &kp F5    &kp F11   &kp F12         &kp F8        &kp F9     &kp F10
-                       &trans        &trans        &trans    &trans    &trans          &trans
+                       &kp LEFT_GUI  &trans        &trans    &trans    &trans          &trans
             >;
         };
 
         layer_3 {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans              &trans               &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans              &trans               &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LEFT_BRACE)  &kp RG(RIGHT_BRACE)  &trans
                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
