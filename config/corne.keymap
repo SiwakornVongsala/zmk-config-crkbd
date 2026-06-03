@@ -42,17 +42,17 @@
         };
 
         r_cmd {
-            bindings = <&kp RIGHT_GUI>;
+            bindings = <&kp LG(LS(RBKT))>;
             key-positions = <27 28>;
         };
 
         l_cmd {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp LG(LS(LBKT))>;
             key-positions = <21 22>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        lang {
+            bindings = <&kp CAPS>;
             key-positions = <16 17 18>;
         };
 
