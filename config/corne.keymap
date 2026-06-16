@@ -53,6 +53,12 @@
 
         lang {
             bindings = <&kp CAPS>;
+            key-positions = <12 13>;
+            timeout-ms = <35>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
         };
 
