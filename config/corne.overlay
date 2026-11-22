@@ -1,0 +1,7 @@
+// Wake from &soft_off by pressing any key (kscan0 already has wakeup-source in the corne shield).
+/ {
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
+};
